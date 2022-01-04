@@ -1,0 +1,41 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Testcasefour.txt",
+				"folderPath": "tets",
+				"container": "adfdemo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "customerkey",
+				"type": "String"
+			},
+			{
+				"name": "emailaddress",
+				"type": "String"
+			},
+			{
+				"name": "product_preference",
+				"type": "String"
+			},
+			{
+				"name": "User_ID",
+				"type": "String"
+			}
+		]
+	}
+}
